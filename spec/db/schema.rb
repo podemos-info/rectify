@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160525115421) do
+ActiveRecord::Schema.define(version: 20180531090029) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "street",     default: "", null: false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160525115421) do
     t.boolean  "active",         default: true, null: false
     t.integer  "address_id"
     t.datetime "last_logged_in"
+    t.string   "user"
   end
 
 end
